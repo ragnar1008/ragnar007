@@ -719,20 +719,57 @@
 
     <!-- Модальное окно отмены -->
     <div id="cancelModal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <div class="modal-icon cancel-icon">
-                <i class="fas fa-phone-alt"></i>
-            </div>
-            <h2>Отмена привязки счета</h2>
-            <p>Для отмены привязки счета позвоните по номеру:</p>
-            <div class="phone-number">7 (979) 034-87-06</div>
-            <p>Наши операторы доступны с 00:00 до 24:00 ежедневно</p>
-            <a href="tel:+79790348706" class="call-btn" id="callBtn">
-                <i class="fas fa-phone"></i> Позвонить сейчас
-            </a>
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div class="modal-icon cancel-icon">
+            <i class="fas fa-phone-alt"></i>
         </div>
+        <h2>Отмена привязки счета</h2>
+        <p>Для отмены привязки счета позвоните по одному из номеров:</p>
+        
+        <div class="phone-numbers-list">
+            <!-- Первый номер (основной) -->
+            <div class="phone-item">
+                <i class="fas fa-headset"></i>
+                <div class="phone-info">
+                    <div class="phone-type">Основная линия</div>
+                    <div class="phone-number">+7 (979) 034-87-06</div>
+                </div>
+                <a href="tel:+79790348706" class="small-call-btn">
+                    <i class="fas fa-phone"></i> Позвонить
+                </a>
+            </div>
+            
+            <!-- Второй номер (твой первый) -->
+            <div class="phone-item">
+                <i class="fas fa-mobile-alt"></i>
+                <div class="phone-info">
+                    <div class="phone-type">Дополнительный</div>
+                    <div class="phone-number">+7 (979) 034-71-63</div>
+                </div>
+                <a href="tel:+79790347163" class="small-call-btn">
+                    <i class="fas fa-phone"></i> Позвонить
+                </a>
+            </div>
+            
+            <!-- Третий номер (твой второй) -->
+            <div class="phone-item">
+                <i class="fas fa-phone-square"></i>
+                <div class="phone-info">
+                    <div class="phone-type">Техническая поддержка</div>
+                    <div class="phone-number">+7 (979) 034-96-93</div>
+                </div>
+                <a href="tel:+79790349693" class="small-call-btn">
+                    <i class="fas fa-phone"></i> Позвонить
+                </a>
+            </div>
+        </div>
+        
+        <p style="margin-top: 20px; color: #5a6c7d; font-size: 14px;">
+            <i class="fas fa-clock"></i> Наши операторы доступны с 00:00 до 24:00 ежедневно
+        </p>
     </div>
+</div>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -964,3 +1001,4 @@
 </body>
 
 </html>
+
